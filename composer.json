@@ -1,7 +1,7 @@
 {
     "name": "siketyan/kagawa-bundle",
     "description": "Kagawa Prefecture restriction for Symfony.",
-    "type": "library",
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
