@@ -1,0 +1,28 @@
+{
+    "name": "siketyan/kagawa-bundle",
+    "description": "Kagawa Prefecture restriction for Symfony.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naoki Ikeguchi",
+            "email": "root@siketyan.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3",
+        "symfony/framework-bundle": "^4.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Siketyan\\KagawaBundle\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
