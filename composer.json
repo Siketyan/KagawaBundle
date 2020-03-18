@@ -1,0 +1,14 @@
+{
+    "name": "siketyan/kagawa-bundle",
+    "description": "Kagawa Prefecture restriction for Symfony.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naoki Ikeguchi",
+            "email": "root@siketyan.dev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
