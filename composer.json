@@ -10,7 +10,13 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": "^7.3",
+        "symfony/framework-bundle": "^4.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
     "autoload": {
         "psr-4": {
             "Siketyan\\KagawaBundle\\": "src/"
@@ -20,5 +26,8 @@
         "psr-4": {
             "Siketyan\\KagawaBundle\\": "tests/"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }
