@@ -24,5 +24,8 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "tests": "vendor/bin/phpunit src/Tests"
     }
 }
