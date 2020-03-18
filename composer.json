@@ -10,5 +10,15 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Siketyan\\KagawaBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Siketyan\\KagawaBundle\\": "tests/"
+        }
+    }
 }
