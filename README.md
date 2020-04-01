@@ -52,3 +52,6 @@
      geoip_db: '/path/to/geoip_db.mmdb'
      message: 'Hint message'
    ```
+
+## 📷 Screenshot
+![Screenshot](.github/resources/screenshot.png)
