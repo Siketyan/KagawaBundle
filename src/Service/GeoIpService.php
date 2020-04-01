@@ -40,7 +40,7 @@ class GeoIpService
      *
      * @throws InvalidDatabaseException
      */
-    public function getCity(string $address): City
+    public function getCity(string $address): ?City
     {
         try {
             return $this->reader->city($address);

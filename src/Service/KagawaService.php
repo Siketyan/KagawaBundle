@@ -105,6 +105,11 @@ class KagawaService
     private function isFromKagawa(Request $request): bool
     {
         $city = $this->geoIpService->getCity($request->getClientIp());
+
+        if ($city === null) {
+            return false;
+        }
+
         $country = $city->country;
 
         /** @var Subdivision $prefecture */
