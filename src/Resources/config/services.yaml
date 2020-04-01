@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Siketyan\KagawaBundle\:
+    resource: '../../*'
+    exclude: '../{DependencyInjection,Entity,Migrations,Tests,HttpKernel}'
+
+  Siketyan\KagawaBundle\EventListener\ControllerListener:
+    tags:
+      - name: kernel.event_listener
+        event: kernel.controller

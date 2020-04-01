@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale | default(app.request.defaultLocale) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>You are restricted</title>
+        <link rel="stylesheet" href="{{ asset('bundles/siketyankagawa/bundle.css') }}">
+    </head>
+    <body>
+        <header class="hero is-primary">
+            <div class="hero-body has-text-centered">
+                <img
+                    src="{{ asset('bundles/siketyankagawa/images/kagawa.svg') }}"
+                    alt="Kagawa Prefecture"
+                    width="128"
+                    height="128"
+                >
+                <h1 class="title">
+                    You are restricted.
+                </h1>
+                <h2 class="subtitle">
+                    We rejected your access because your IP address is located in Kagawa Prefecture.
+                </h2>
+            </div>
+        </header>
+        <main class="container">
+            <form method="post" class="has-text-centered">
+                <fieldset>
+                    <legend>
+                        {{ config['message'] }}
+                    </legend>
+                    <a class="button is-primary" href="https://www.pref.kagawa.lg.jp/">
+                        I am in Kagawa, leaving
+                    </a>
+                    <button type="submit" class="button is-danger">
+                        I am NOT in Kagawa, continue
+                    </button>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Powered by
+                    <b>
+                        <a href="https://github.com/Siketyan/KagawaBundle">Siketyan/KagawaBundle</a>
+                    </b>
+                </p>
+            </div>
+        </footer>
+
+        <script src="{{ asset('bundles/siketyankagawa/bundle.js') }}"></script>
+    </body>
+</html>
