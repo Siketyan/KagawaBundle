@@ -5,6 +5,10 @@
   <h1>Kagawa Bundle</h1>
   <p>
     <img
+      alt="Packagist Version"
+      src="https://img.shields.io/packagist/v/siketyan/kagawa-bundle?style=for-the-badge"
+    >
+    <img
       alt="GitHub Workflow Status"
       src="https://img.shields.io/github/workflow/status/Siketyan/KagawaBundle/PHP Composer/master?style=for-the-badge"
     >
